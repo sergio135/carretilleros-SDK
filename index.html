@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<link rel='stylesheet' href='estilo.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="author" content="Sergio Garcia">
+		<title>Carretilleros SAP</title>
+	</head>
+	<body>    
+		<header>
+			<img src="img/logo.png" alt="CUPA GROUP">
+		</header>
+		<main>
+			<div id="webviewbox">
+				<webview id="sap" src="http://lmcgsa005.cupagroup.com:8000/sap/bc/gui/sap/its/zmm_rf_000"></webview>
+			</div>
+			<div id="keybottom">
+				<div class="area-key">
+					<div class="words">
+						<div class="box-key">
+							<div class="button">q</div>
+							<div class="button">w</div>
+							<div class="button">e</div>
+							<div class="button">r</div>
+							<div class="button">t</div>
+							<div class="button">y</div>
+							<div class="button">u</div>
+							<div class="button">i</div>
+							<div class="button">o</div>
+							<div class="button">p</div>
+						</div>
+						<div class="box-key">
+							<div class="button">a</div>
+							<div class="button">s</div>
+							<div class="button">d</div>
+							<div class="button">f</div>
+							<div class="button">g</div>
+							<div class="button">h</div>
+							<div class="button">j</div>
+							<div class="button">k</div>
+							<div class="button">l</div>
+							<div class="button">ñ</div>
+						</div>
+						<div class="box-key">
+							<div class="button">z</div>
+							<div class="button">x</div>
+							<div class="button">c</div>
+							<div class="button">v</div>
+							<div class="button">b</div>
+							<div class="button">n</div>
+							<div class="button">m</div>
+						</div>
+					</div>
+					<div class="number">
+						<div class="box-key">
+							<div class="button">9</div>
+							<div class="button">8</div>
+							<div class="button">7</div>
+						</div>
+						<div class="box-key">
+							<div class="button">6</div>
+							<div class="button">5</div>
+							<div class="button">4</div>
+						</div>
+						<div class="box-key">
+							<div class="button">3</div>
+							<div class="button">2</div>
+							<div class="button">1</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="UX">
+				<div id="icon-box">
+					<img src="img/keyboard.png" alt="keyboard">
+				</div>
+			</div>
+		</main>
+		<script src="app.js"></script>
+	</body>
 </html>
